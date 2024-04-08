@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <title>Trivia!</title>
+
+        <!-- <script>
+            TODO: Add code to check answers to questions
+        </script> -->
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Curiosidades!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Parte 1: Multipla escolha </h2>
+                <hr>
+                <h3>Qual o único satélite natural da Terra?</h3>
+                <p><input type="radio" name="choice" value="1"><b>Plutão 🌚</b></p>
+                <p><input type="radio" name="choice" value="2"><b>Lua 🌛</b></p>
+                <p><input type="radio" name="choice" value="3"><b>Sol 🌞</b></p>
+                <p id="message"></p>
+                <p id="messages"></p>
+                <!-- TODO: Add multiple choice question here -->
+            </div>
+            
+            <div class="section">
+                <h2>Parte 2: Resposta livre</h2>
+                <hr>
+                <h3>A Floresta Amazônica é a maior floresta equatorial (ou pluvial) do mundo. A maior parte dela está situada em qual país?</h3>
+                <input type="text" id="correct" placeholder="Digite sua resposta">
+                <button type="button" onclick="check()">Verifique a resposta</button>
+                <p id="box"></p>
+                <!-- TODO: Add free response question here -->
+            </div>
+
+        </div>        
+        <script src="index.js"></script>
+    </body>
+</html>
